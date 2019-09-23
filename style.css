@@ -1,6 +1,6 @@
 :root {
   --page-color: #a8e0ff;
-  --animate-speed: 1s;
+  --animate-speed: 2s;
 }
 
 body {
@@ -27,7 +27,7 @@ body {
   height: 100vh;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  text-align: justify;
   padding: 0 4rem;
 }
 
@@ -35,6 +35,7 @@ body {
   font-size: 4rem;
   line-height: 1.2;
   margin: 1rem;
+  text-align: center;
 }
 
 .page p {
@@ -57,4 +58,28 @@ body {
 .btn:hover {
   background: #a08294;
   color: #28344e;
+}
+
+/* Page animation */
+#page-1 h1 {
+  transform: translateY(-1200px);
+  animation: heading var(--animate-speed) forwards ease-in;
+}
+
+#page-1 p {
+  transform: translateX(-1200px);
+  animation: paragraph var(--animate-speed) forwards ease-in 2s;
+}
+
+/* Keyframes */
+@keyframes heading {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes paragraph {
+  to {
+    transform: translateX(0);
+  }
 }
