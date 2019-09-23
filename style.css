@@ -1,0 +1,60 @@
+:root {
+  --page-color: #a8e0ff;
+  --animate-speed: 1s;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  color: #3e517a;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Page colors */
+#page-1,
+#page-2,
+#page-3,
+#page-4,
+#page-5 {
+  background: var(--page-color);
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 4rem;
+}
+
+.page h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin: 1rem;
+}
+
+.page p {
+  font-size: 1.3rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #ccb7c3;
+  color: #3e517a;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  transition: all 0.3s ease-in;
+}
+
+.btn:hover {
+  background: #a08294;
+  color: #28344e;
+}
